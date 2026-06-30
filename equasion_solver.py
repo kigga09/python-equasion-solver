@@ -1,5 +1,7 @@
 #no graphical user interface
 
+from math import sqrt
+
 deg = int(input("Enter the degree of the polynomial: "))
 
 print("""Enter the coefficients of the polynomial in decreasing order of degree such as
