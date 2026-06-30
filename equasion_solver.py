@@ -1,5 +1,7 @@
 #no graphical user interface
 
+from math import sqrt
+
 print("This program solves polynomial equations of degree 1 and 2.")
 deg = int(input("Enter the degree of the polynomial: "))
 
@@ -21,7 +23,10 @@ elif deg == 2:
     else:
         delta = b**2 - 4*a*c
         if delta < 0:
-            print("The equation has no real roots.")
+            d = sqrt(-delta)
+            real_part = -b / (2*a)
+            imaginary_part = d / (2*a)
+            print(f"The equation has two complex roots: {real_part} + {imaginary_part}i and {real_part} - {imaginary_part}i")
         elif delta == 0:
             root = -b / (2*a)
             print(f"The equation has one real root: {root}")
