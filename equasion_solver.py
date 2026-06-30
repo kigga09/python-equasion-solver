@@ -1,10 +1,5 @@
 #no graphical user interface
 
-from math import sqrt
-
-from math import sqrt
-
-print("This program solves polynomial equations of degree 1 and 2.")
 deg = int(input("Enter the degree of the polynomial: "))
 
 if deg == 1:
@@ -23,4 +18,4 @@ elif deg == 2:
     if a == 0:
         print("error: coefficient a cannot be zero for a quadratic equation.")
     else:
-        print('No real roots') 
+        return 'No real roots'
